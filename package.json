@@ -1,0 +1,39 @@
+{
+  "name": "solidityhelloworld8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "truffle test",
+    "test:polygon": "truffle test --config=truffle-config.polygon.js --network=polygon_infura_testnet",
+    "compile:polygon": "truffle compile --config=truffle-config.polygon.js",
+    "migrate:polygon": "truffle migrate --config=truffle-config.polygon.js --network=polygon_infura_testnet"
+  },
+  "keywords": [
+    "Matic",
+    "Polygon",
+    "Ethereum",
+    "Truffle",
+    "dapp"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@maticnetwork/maticjs": "^3.5.0",
+    "@truffle/hdwallet-provider": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.0",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.20",
+    "solc": "^0.8.17",
+    "truffle-contract": "^4.0.31"
+  }
+}
